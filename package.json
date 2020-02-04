@@ -1,0 +1,23 @@
+{
+  "name": "Snack-Price-Web-Scraper",
+  "version": "1.0.0",
+  "description": "Web Scrapes that tracks the price of my favorite snack everyday so that I can know when it's on sale.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atakanCocen/Snack-Price-Web-Scraper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atakanCocen/Snack-Price-Web-Scraper/issues"
+  },
+  "homepage": "https://github.com/atakanCocen/Snack-Price-Web-Scraper#readme",
+  "dependencies": {
+    "puppeteer": "^2.1.0"
+  }
+}
