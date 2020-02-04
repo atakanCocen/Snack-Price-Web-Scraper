@@ -8,13 +8,18 @@ async function scrapeProduct(url) {
 
   const [prod] = await page.$x('//*[@id="productTitle"]');
   const txt = await prod.getProperty("textContent");
-  const title = await txt.jsonValue();
+  let title = await txt.jsonValue();
+  title = title.replace(/\\n/g, "");
+  title = title.replace(/  /g, "");
 
   const [prod2] = await page.$x('//*[@id="price_inside_buybox"]');
   const txt2 = await prod2.getProperty("textContent");
-  const price = await txt2.jsonValue();
+  let price = await txt2.jsonValue();
+  price = price.replace(/\\n/g, "");
+  price = price.replace(/  /g, "");
 
-  console.log({ title, price });
+  console.log(title, price);
+
   browser.close();
 }
 
